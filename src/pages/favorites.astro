@@ -1,0 +1,67 @@
+---
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Favourites</title>
+	</head>
+	<body>
+		<Header />
+
+		<section class="max-w-6xl mx-auto px-6 md:px-10 py-10 md:py-16 fade-up">
+			<div class="mb-10">
+				<p class="text-xs uppercase tracking-[0.35em] text-[#d4af37] mb-3">Your collection</p>
+				<h1 class="font-serif-display text-4xl md:text-5xl text-white">Saved gemstones</h1>
+			</div>
+
+			<!-- <div class="glass rounded-2xl p-16 text-center" data-testid="empty-favorites">
+				<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart mx-auto text-[#d4af37] mb-4" aria-hidden="true">
+					<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+				</svg>
+				<p class="font-serif-display text-3xl text-white mb-3">No favorites yet</p>
+				<p class="text-white/55 mb-8 max-w-md mx-auto">Tap the heart on any gemstone to keep its energy close.</p>
+				<a class="inline-flex items-center px-6 py-3 rounded-full bg-[#d4af37] hover:bg-[#f1c40f] text-[#0b0c10] font-medium text-sm tracking-wider transition-colors" data-testid="browse-link" href="browse" data-discover="true">Browse crystals</a>
+			</div> -->
+
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="results-grid" x-file-name="HomePage" x-line-number="250" x-column="10" x-component="div" x-id="HomePage_250_10" x-dynamic="true" x-source-type="computed" x-source-editable="false">
+
+                <a class="group relative glass rounded-2xl overflow-hidden glow-hover block" data-testid="gemstone-card-amethyst" href="/stone/amethyst" data-discover="true">
+                    <div class="relative aspect-[4/5] overflow-hidden" x-file-name="GemstoneCard" x-line-number="44" x-column="6" x-component="div" x-id="GemstoneCard_44_6" x-dynamic="false">
+                        <img alt="Amethyst" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" x-file-name="GemstoneCard" x-line-number="45" x-column="8" x-component="img" x-id="GemstoneCard_45_8" x-dynamic="false" src="https://images.unsplash.com/photo-1632980205460-e490e885e848?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;q=85&amp;w=1200">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c10] via-[#0b0c10]/30 to-transparent" x-file-name="GemstoneCard" x-line-number="55" x-column="8" x-component="div" x-id="GemstoneCard_55_8" x-dynamic="false"></div>
+                            <button aria-label="Add to favorites" class="absolute top-3 right-3 w-10 h-10 grid place-items-center rounded-full glass hover:border-[#d4af37]/40 transition-colors" data-testid="favorite-toggle-amethyst" x-file-name="GemstoneCard" x-line-number="56" x-column="8" x-component="button" x-id="GemstoneCard_56_8" x-dynamic="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart text-white/80" aria-hidden="true" x-file-name="GemstoneCard" x-line-number="62" x-column="10" x-component="Heart" x-id="GemstoneCard_62_10" x-dynamic="false">
+                                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="p-5" x-file-name="GemstoneCard" x-line-number="70" x-column="6" x-component="div" x-id="GemstoneCard_70_6" x-dynamic="false">
+                        <div class="flex items-center gap-2 mb-2" x-file-name="GemstoneCard" x-line-number="71" x-column="8" x-component="div" x-id="GemstoneCard_71_8" x-dynamic="false">
+                            <span class="w-2.5 h-2.5 rounded-full inline-block" aria-hidden="true" x-file-name="GemstoneCard" x-line-number="72" x-column="10" x-component="span" x-id="GemstoneCard_72_10" x-dynamic="false" style="background-color: rgb(142, 68, 173); box-shadow: rgba(142, 68, 173, 0.5) 0px 0px 12px;"></span>
+                            <span class="text-[10px] uppercase tracking-[0.25em] text-white/50" x-file-name="GemstoneCard" x-line-number="80" x-column="10" x-component="span" x-id="GemstoneCard_80_10" x-dynamic="true" x-source-type="prop" x-source-var="gem" x-source-path="chakra" x-source-editable="false">
+                            <span data-ve-dynamic="true" x-excluded="true" x-file-name="GemstoneCard" x-line-number="80" x-column="10" x-component="span" x-id="GemstoneCard_80_10_expr1" x-dynamic="true" x-source-type="prop" x-source-var="gem" x-source-path="chakra" x-source-editable="false" style="display: contents;">Crown</span>
+                                Chakra</span>
+                        </div>
+                        <h3 class="font-serif-display text-2xl text-white mb-3" x-file-name="GemstoneCard" x-line-number="84" x-column="8" x-component="h3" x-id="GemstoneCard_84_8" x-dynamic="true" x-source-type="prop" x-source-var="gem" x-source-path="name" x-source-editable="false">Amethyst</h3>
+                        <div class="flex flex-wrap gap-1.5" x-file-name="GemstoneCard" x-line-number="87" x-column="8" x-component="div" x-id="GemstoneCard_87_8" x-dynamic="true" x-source-type="computed" x-source-editable="false">
+                            <span class="text-[11px] px-2.5 py-1 rounded-full border border-white/10 text-white/60" x-file-name="GemstoneCard" x-line-number="92" x-column="14" x-component="span" x-id="GemstoneCard_92_14" x-dynamic="true" x-source-type="static-imported" x-source-var="highlighted" x-source-editable="false" x-array-var="highlighted" x-array-item-param="intent">calm</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded-full border border-white/10 text-white/60" x-file-name="GemstoneCard" x-line-number="92" x-column="14" x-component="span" x-id="GemstoneCard_92_14" x-dynamic="true" x-source-type="static-imported" x-source-var="highlighted" x-source-editable="false" x-array-var="highlighted" x-array-item-param="intent">intuition</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded-full border border-white/10 text-white/60" x-file-name="GemstoneCard" x-line-number="92" x-column="14" x-component="span" x-id="GemstoneCard_92_14" x-dynamic="true" x-source-type="static-imported" x-source-var="highlighted" x-source-editable="false" x-array-var="highlighted" x-array-item-param="intent">protection</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded-full border border-white/10 text-white/60" x-file-name="GemstoneCard" x-line-number="92" x-column="14" x-component="span" x-id="GemstoneCard_92_14" x-dynamic="true" x-source-type="static-imported" x-source-var="highlighted" x-source-editable="false" x-array-var="highlighted" x-array-item-param="intent">healing</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+		</section>
+
+    </body>
+</html>

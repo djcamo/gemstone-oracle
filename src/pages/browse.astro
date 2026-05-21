@@ -1,0 +1,87 @@
+---
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Browse</title>
+	</head>
+	<body>
+		<Header />
+
+        <section class="relative max-w-6xl mx-auto px-6 md:px-10 py-12 md:py-16" data-testid="results-section">
+            <div class="flex flex-col gap-6 mb-8 md:flex-row md:items-end md:justify-between">
+                <div>
+                    <p class="text-xs uppercase tracking-[0.35em] text-[#d4af37] mb-3">The collection</p>
+                    <h2 class="font-serif-display text-3xl md:text-4xl text-white" data-testid="results-title">Browse all crystals</h2>
+                </div>
+                <div class="flex flex-wrap items-center gap-3" data-testid="filters-row">
+                    <button type="button" role="combobox" aria-controls="radix-_r_0_" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed" class="flex h-9 items-center justify-between whitespace-nowrap border px-3 py-2 text-sm shadow-sm ring-offset-background data-[placeholder]:text-muted-foreground focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;&gt;span]:line-clamp-1 w-[170px] rounded-full bg-white/[0.04] border-white/15 text-white hover:border-white/30 focus:ring-[#d4af37] focus:ring-1 focus:border-[#d4af37]" data-testid="filter-chakra-trigger">
+                        <span style="pointer-events: none;">All chakras</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-50" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
+                    <button type="button" role="combobox" aria-controls="radix-_r_1_" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed" class="flex h-9 items-center justify-between whitespace-nowrap border px-3 py-2 text-sm shadow-sm ring-offset-background data-[placeholder]:text-muted-foreground focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 [&amp;&gt;span]:line-clamp-1 w-[170px] rounded-full bg-white/[0.04] border-white/15 text-white hover:border-white/30 focus:ring-[#d4af37] focus:ring-1 focus:border-[#d4af37]" data-testid="filter-zodiac-trigger">
+                        <span style="pointer-events: none;">All signs</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-50" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- <div class="glass rounded-2xl p-12 text-center" data-testid="empty-state">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles mx-auto text-[#d4af37] mb-4" aria-hidden="true">
+                    <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
+                    <path d="M20 3v4"></path>
+                    <path d="M22 5h-4"></path>
+                    <path d="M4 17v2"></path>
+                    <path d="M5 18H3"></path>
+                </svg>
+                <p class="font-serif-display text-2xl text-white mb-2">No stones found</p>
+                <p class="text-white/50 text-sm">Try a different intention or clear your filters.</p>
+            </div> -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="results-grid" x-file-name="HomePage" x-line-number="250" x-column="10" x-component="div" x-id="HomePage_250_10" x-dynamic="true" x-source-type="computed" x-source-editable="false">
+
+                <a class="group relative glass rounded-2xl overflow-hidden glow-hover block" data-testid="gemstone-card-amethyst" href="/stone/amethyst" data-discover="true">
+                    <div class="relative aspect-[4/5] overflow-hidden" x-file-name="GemstoneCard" x-line-number="44" x-column="6" x-component="div" x-id="GemstoneCard_44_6" x-dynamic="false">
+                        <img alt="Amethyst" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" x-file-name="GemstoneCard" x-line-number="45" x-column="8" x-component="img" x-id="GemstoneCard_45_8" x-dynamic="false" src="https://images.unsplash.com/photo-1632980205460-e490e885e848?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;q=85&amp;w=1200">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c10] via-[#0b0c10]/30 to-transparent" x-file-name="GemstoneCard" x-line-number="55" x-column="8" x-component="div" x-id="GemstoneCard_55_8" x-dynamic="false"></div>
+                            <button aria-label="Add to favorites" class="absolute top-3 right-3 w-10 h-10 grid place-items-center rounded-full glass hover:border-[#d4af37]/40 transition-colors" data-testid="favorite-toggle-amethyst" x-file-name="GemstoneCard" x-line-number="56" x-column="8" x-component="button" x-id="GemstoneCard_56_8" x-dynamic="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart text-white/80" aria-hidden="true" x-file-name="GemstoneCard" x-line-number="62" x-column="10" x-component="Heart" x-id="GemstoneCard_62_10" x-dynamic="false">
+                                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="p-5" x-file-name="GemstoneCard" x-line-number="70" x-column="6" x-component="div" x-id="GemstoneCard_70_6" x-dynamic="false">
+                        <div class="flex items-center gap-2 mb-2" x-file-name="GemstoneCard" x-line-number="71" x-column="8" x-component="div" x-id="GemstoneCard_71_8" x-dynamic="false">
+                            <span class="w-2.5 h-2.5 rounded-full inline-block" aria-hidden="true" x-file-name="GemstoneCard" x-line-number="72" x-column="10" x-component="span" x-id="GemstoneCard_72_10" x-dynamic="false" style="background-color: rgb(142, 68, 173); box-shadow: rgba(142, 68, 173, 0.5) 0px 0px 12px;"></span>
+                            <span class="text-[10px] uppercase tracking-[0.25em] text-white/50" x-file-name="GemstoneCard" x-line-number="80" x-column="10" x-component="span" x-id="GemstoneCard_80_10" x-dynamic="true" x-source-type="prop" x-source-var="gem" x-source-path="chakra" x-source-editable="false">
+                            <span data-ve-dynamic="true" x-excluded="true" x-file-name="GemstoneCard" x-line-number="80" x-column="10" x-component="span" x-id="GemstoneCard_80_10_expr1" x-dynamic="true" x-source-type="prop" x-source-var="gem" x-source-path="chakra" x-source-editable="false" style="display: contents;">Crown</span>
+                                Chakra</span>
+                        </div>
+                        <h3 class="font-serif-display text-2xl text-white mb-3" x-file-name="GemstoneCard" x-line-number="84" x-column="8" x-component="h3" x-id="GemstoneCard_84_8" x-dynamic="true" x-source-type="prop" x-source-var="gem" x-source-path="name" x-source-editable="false">Amethyst</h3>
+                        <div class="flex flex-wrap gap-1.5" x-file-name="GemstoneCard" x-line-number="87" x-column="8" x-component="div" x-id="GemstoneCard_87_8" x-dynamic="true" x-source-type="computed" x-source-editable="false">
+                            <span class="text-[11px] px-2.5 py-1 rounded-full border border-white/10 text-white/60" x-file-name="GemstoneCard" x-line-number="92" x-column="14" x-component="span" x-id="GemstoneCard_92_14" x-dynamic="true" x-source-type="static-imported" x-source-var="highlighted" x-source-editable="false" x-array-var="highlighted" x-array-item-param="intent">calm</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded-full border border-white/10 text-white/60" x-file-name="GemstoneCard" x-line-number="92" x-column="14" x-component="span" x-id="GemstoneCard_92_14" x-dynamic="true" x-source-type="static-imported" x-source-var="highlighted" x-source-editable="false" x-array-var="highlighted" x-array-item-param="intent">intuition</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded-full border border-white/10 text-white/60" x-file-name="GemstoneCard" x-line-number="92" x-column="14" x-component="span" x-id="GemstoneCard_92_14" x-dynamic="true" x-source-type="static-imported" x-source-var="highlighted" x-source-editable="false" x-array-var="highlighted" x-array-item-param="intent">protection</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded-full border border-white/10 text-white/60" x-file-name="GemstoneCard" x-line-number="92" x-column="14" x-component="span" x-id="GemstoneCard_92_14" x-dynamic="true" x-source-type="static-imported" x-source-var="highlighted" x-source-editable="false" x-array-var="highlighted" x-array-item-param="intent">healing</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </body>
+</html>
