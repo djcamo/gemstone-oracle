@@ -13,8 +13,8 @@
                 data-discover="true"
                 ><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -29,15 +29,21 @@
                     ></path><path d="M4 17v2"></path><path d="M5 18H3"
                     ></path></svg
                 ><span class="font-serif-display text-xl tracking-wide"
-                    >Lithos</span
+                    ></span
                 ></a>
         </div><nav class="flex items-center gap-5">
             <a
-                class="text-sm tracking-[0.15em] uppercase text-white/60 hover:text-white transition-colors hidden sm:inline-block"
-                data-testid="nav-search"
-                href="/"
-                data-discover="true">Search</a
-            ><a
+                class="flex items-center gap-2 text-sm tracking-[0.15em] uppercase text-white/60 hover:text-[#d4af37] transition-colors"
+                data-testid="nav-browse"
+                href="/browse"
+                data-discover="true"
+                >
+                <img
+                    src="/images/folder.svg"
+                    alt="Browse gemstones"
+                    class="w-3.5 h-3.5 filter invert">
+                <span class="hidden sm:inline">Browse</span></a>
+            <a
                 class="flex items-center gap-2 text-sm tracking-[0.15em] uppercase text-white/60 hover:text-[#d4af37] transition-colors"
                 data-testid="nav-favorites"
                 href="/favorites"
